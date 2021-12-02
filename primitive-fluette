@@ -1,0 +1,32 @@
+#The Fluette base-n sequence is constructed from all positive integers with ascending digital values corresponding to descending place values
+#This sequence is infinite, though its restriction to a subsequence of positive integers with strictly ascending digital values is finite in any finite base
+
+#Try Different Bases
+import matplotlib.pyplot as plt
+
+def numberToBase(n, b):
+    if n == 0:
+        return [0]
+    digits = []
+    while n:
+        digits.append(int(n % b))
+        n //= b
+    return digits[::-1]
+
+#The base we want to test
+base = 8
+
+n = 0
+seq = [n]
+while n < 1234567: 
+    n += 1
+    nlist = numberToBase(n,base)
+    nsorted = sorted(nlist)
+  
+    if nlist == nsorted:
+        seq.append(n)
+#print(seq)
+print(len(seq))
+plt.plot(seq)
+
+
