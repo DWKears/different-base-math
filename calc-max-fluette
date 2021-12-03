@@ -1,0 +1,11 @@
+#Making a digital list to convert to maximum Fluette elements
+maxbase = 16
+dig = list(range(maxbase))
+dig.pop(0)
+
+bases = [digit + 1 for digit in dig]
+
+for base in bases:
+    n = 0
+    for power in range(base):
+      print([base - power - 1])
