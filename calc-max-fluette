@@ -5,7 +5,7 @@ dig.pop(0)
 
 maxF = []
 
-for i in range(maxbase-2):
+for i in range(maxbase-1):
     bmf = baseToInt10(dig[:i+1],i+2)
     maxF.append(bmf)
 
