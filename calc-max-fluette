@@ -3,9 +3,10 @@ maxbase = 16
 dig = list(range(maxbase))
 dig.pop(0)
 
-bases = [digit + 1 for digit in dig]
+maxF = []
 
-for base in bases:
-    n = 0
-    for power in range(base):
-      print([base - power - 1])
+for i in range(maxbase-2):
+    bmf = baseToInt10(dig[:i+1],i+2)
+    maxF.append(bmf)
+
+print(maxF)
