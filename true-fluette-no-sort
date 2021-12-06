@@ -1,0 +1,19 @@
+#Generating a true fluette sequence from a base without sorting
+base = 8
+n = 0
+seq = [n]
+while n < : 
+    n += 1
+    nlist = numberToBase(n,base)
+    issorted = True
+    for i in range(len(nlist)-1):
+        if nlist(i) <= nlist(i+1):
+            issorted = False
+            break
+    
+    if issorted == True:
+        seq.append(n)
+        
+#print(seq)
+print(len(seq))
+#plt.plot(seq)
