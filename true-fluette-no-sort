@@ -1,5 +1,5 @@
 #Generating a true fluette sequence from a base without sorting
-base = 8
+base = 8 #Larger bases take significant computation time (and memory)
 mfn = maxf[base-2] #see calc-max-fluette
 
 n = 0
