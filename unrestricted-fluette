@@ -1,0 +1,11 @@
+n = 0
+seq = [n]
+while n < 16384: #arbitrary power of 2 to cap calculations
+    n += 1
+    nlist = numberToBase(n,base)
+    if nlist = sorted(nlist) #if all the digits are 'in order'
+        seq.append(n)
+        
+#print(seq)
+print(len(seq))
+#plt.plot(seq)
